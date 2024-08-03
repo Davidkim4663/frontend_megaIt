@@ -1,0 +1,12 @@
+● orientation
+● 강사 : 안재욱
+● 과제 제출 : ajw1079@naver.com
+● 제출시 제목 : YYYYMMDD_과제명_이름
+● 제출시 내용 : 과제 파일 또는 github URL 주소
+ > 오픈 채팅방은 과제 및 실스바 자료 제공으로 활용
+  Visual Studio Code로 수업진행
+
+
+● UI / UX
+ UI : 사용자가 웹이나 앱을 이용하는 과정에서 갖추어야 할 플로우
+ UX : 이용간 불편합에 대한 해소

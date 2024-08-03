@@ -1,0 +1,14 @@
+● git 버전확인
+> git --version 
+
+● git 버전확인
+git config --global user.name "KIM"
+> git config --global user.email "ip4523@naver.com"
+
+● git config --list
+
+● git init 
+
+● git config --global user.name "Daivd"
+
+https://github.com/Davidkim4663/test.git
