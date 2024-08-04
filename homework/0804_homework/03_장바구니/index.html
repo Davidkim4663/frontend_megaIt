@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장바구니</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- 
+      Q. table안에 이미지를 넣으면 스타일을 적용 할 때
+         각 행의 높이 값이 안 맞아서 img태그에 스타일을 적용 하면
+         결과값이 많이 깨집니다.
+
+         table 대신 Ul태그를 사용하여 각 항목은 li로 관리하는게
+         더 편한데요...
+    
+    
+    -->
+    <div id="container-box">
+      <div class="cart_box">
+        <div class="cart_title">
+          <h3>my cart</h3>
+        </div>
+        <div class="table-box">
+          <table>
+            <colgroup>
+              <col width="15%" />
+              <col width="40%" />
+              <col width="10%" />
+              <col width="10%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>품목</th>
+                <th>내용</th>
+                <th class="small_box">수량(개)</th>
+                <th class="small_box">가격(원)</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <td colspan="3">총 예상금액</td>
+              <td>95,000</td>
+              <!-- <td></td> -->
+              <!-- <td>총 예상금액</td> -->
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="./img/my_item_01.jpg"
+                      alt="듀얼 유선 가습기_라이언"
+                  /></a>
+                </td>
+                <td>듀얼 유선 가습기_라이언</td>
+                <td class="small_box">1</td>
+                <td class="small_box">29,000원</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#"><img src="./img/my_item_02.jpg" alt="" /></a>
+                </td>
+                <td>듀얼 유선 가습기_라이언</td>
+                <td class="small_box">1</td>
+                <td class="small_box">29,000원</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#"><img src="./img/my_item_03.jpg" alt="" /></a>
+                </td>
+                <td>듀얼 유선 가습기_라이언</td>
+                <td class="small_box">1</td>
+                <td class="small_box">29,000원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
