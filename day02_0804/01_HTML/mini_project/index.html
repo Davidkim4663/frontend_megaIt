@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blueviolet;
+      }
+      table {
+        text-align: center;
+        margin: 0 auto;
+      }
+      thead {
+        background: rgb(194, 123, 194);
+        height: 50px;
+      }
+      td {
+        height: 60px;
+        padding: 10px;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>에버랜드 요금 안내</h1>
+    <table
+      border="1"
+      style="border-collapse: collapse; width: 80%; text-align: center"
+    >
+      <colgroup>
+        <col width="15%" />
+        <col width="15%" />
+        <col width="40%" />
+        <col width="40%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>상품</th>
+          <th>기간</th>
+          <th>특별요금</th>
+          <th>프로그램 내용</th>
+        </tr>
+      </thead>
+      <tfoot style="text-align: center">
+        <tr>
+          <td colspan="4">
+            상기 요금은 학생 기준 10명 이상 예약단체에 한하여 적용
+          </td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>에버랜드</td>
+          <td rowspan="4">1/1~2/29</td>
+          <td class="bold">16,000원</td>
+          <td>축제 + 동물관람 + 이용권</td>
+        </tr>
+        <tr>
+          <td>캐리비안 베이</td>
+          <!-- <td></td> -->
+          <td class="bold">14,000원</td>
+          <td>이용권+구명자켓(준비물: 수영복, 수영모, 수건 등)</td>
+        </tr>
+        <tr>
+          <td>2-Park 이용</td>
+          <!-- <td></td> -->
+          <td class="bold">24,000원</td>
+          <td>캐리비안 베이 + 에버랜드</td>
+        </tr>
+        <tr>
+          <td>2-Park PKG</td>
+          <!-- <td></td> -->
+          <td class="bold">26,000원</td>
+          <td>
+            캐리비안 베이 + 에버랜드
+            <strong class="bold"><mark>+식사권(단체식 or 밀쿠폰)</mark></strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

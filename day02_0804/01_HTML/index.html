@@ -43,7 +43,7 @@
     </div>
 
     <div>
-      <h3 style="background-color: yellowgreen">링크태그 : a(anchor)</h3>
+      <h3 style="background-color: rgb(205, 50, 159)">링크태그 : a(anchor)</h3>
       <p>href 속성 : HyperText Referance 내부에 해당하는 문서를 참조한다.</p>
 
       <!-- 절대경로 : http or https로 시작되는 주소를 참조한다. -->
@@ -62,5 +62,183 @@
       <p>a 태그 내부에 선언 가능한 그 밖의 속성</p>
       <a href="https://www.naver.com/" target="_blank">New Tab</a>
     </div>
+    <div>
+      <h3>이미지 태그 : img 태그는 src, alt 속성은 필수</h3>
+      <a href="https://www.airbnb.com" target="_blank">
+        <img
+          src="https://static-00.iconduck.com/assets.00/airbnb-icon-512x512-d9grja5t.png"
+          alt="airbnb"
+          style="width: 100px"
+        />
+      </a>
+      <img src="./img/kakao1.png" alt="카카오이미지" style="width: 100px" />
+      <img src="./img/kakao2.jpg" alt="카카오이미지" style="width: 100px" />
+      <img src="./img/kakao3.gif" alt="카카오이미지" style="width: 100px" />
+      <img
+        src="./img/facebook.svg"
+        alt="facebook icon img"
+        style="width: 100px"
+      />
+    </div>
+
+    <div style="margin: 0 auto">
+      <h3 style="background-color: rgb(36, 140, 201)">
+        그룹핑이 가능한 태그 : div, span
+        <div style="height: 100px; background-color: #eee">Header 영역</div>
+        <div
+          style="height: 200px; background-color: rgba(255, 255, 170, 0.671)"
+        >
+          banner 영역
+        </div>
+        <div style="height: 400px; background-color: #ffa">contents 영역</div>
+        <div style="height: 80px; background-color: #faa">footer 영역</div>
+      </h3>
+    </div>
+    <div>
+      <header style="height: 100px; background-color: #eee">Header 영역</header>
+      <section
+        id="banner"
+        style="height: 200px; background-color: rgba(255, 255, 170, 0.671)"
+      >
+        banner 영역
+      </section>
+      <section id="contents" style="height: 400px; background-color: #ffa">
+        contents 영역
+      </section>
+      <footer style="height: 80px; background-color: #faa">footer 영역</footer>
+      <hr />
+    </div>
+    <span style="color: red">
+      <span style="color: green">&copy;</span> samsung.co.kr
+    </span>
+    <span><span style="color: blue; font-size: 32px"> 5000</span>원</span>
+    <div>
+      <h4>구조 작성간 주의사항</h4>
+      <i
+        >블록 성질 내부에 블록성질 가능(딘, 말단태그 내부에 말단태그를
+        넣지말것)</i
+      >
+      <br>
+      <i>블럭성질 내부에 인라인 성질을 포함 하는 것 가능</i>
+      <i>인라인 성질 내부에 인라인 성질을 포함하는 것 가능</i>
+      <i>인라인 성질 내부에 블록성질을 포함 시키는 것은 피해야함</i>
+
+      <h5>
+        블록성질1
+        <p>블록성질2</p>
+      </h5>
+      <p>블록성질3
+        <h5>블록성질4</h5>
+      </p>
+      <p style="text-align: right;">블록성질5
+        <span style="color: #f00;">블록성질6</span>
+      </p>
+      블록성질7
+      블록성질8
+
+
+
+
+    </div>
+
+    <div>
+      <h3 style="background-color: greenyellow;">텍스트 영역을 정의하는 태그</h3>
+      <p>강조태그 : 볼드, 이탤릭 처리</p>
+      <strong>볼드처리1</strong>
+      <b>볼드처리2</b>
+      <em>이탤릭 처리1</em>
+      <i>이탤릭 처리2</i>
+      <p>취소선 : del</p>
+      <del>취소선</del>
+      <span><del>12,000원</del> => 10,000원</span>
+
+      <p>상단표기, 하단표기</p>
+      <span>아이디 <sup style="color: red;">*</sup></span>
+      <span>CO<sub><small>2</small></sub></span>
+      <p>글로벌화폐</p>
+      <span>$99. <small>99</small></span>
+    </div>
+
+    <hr />
+    <h2>table 구성</h2>
+    <!-- table은 block 성질을 가지고 있다. -->
+    <table border="1" style="border-collapse: collapse;">
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>이름</th>
+          <th>나이</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>강하늘</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>강대지</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>혜리</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+      
+    </table>
+    <h3>테이블 셀간 병합</h3>
+
+    <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+      <colgroup>
+        <col width="15%" />
+        <col width="15%" />
+        <col width="35%" />
+        <col width="35%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>기존요금</th>
+          <th scope="row">변경요금</th>
+        </tr>
+      </thead>
+      <tfoot style=" text-align: center;">
+        <tr>
+          <td colspan="4">주간 이용권은 09:00 ~ 17:00 이용가능합니다.</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td rowspan="3">주간 이용권</td>
+          <td>대인</td>
+          <td>48,000원</td>
+          <td>52,000원</td>
+        </tr>
+        <tr>
+          <td>청소년</td>
+          <td>41,000원</td>
+          <td>44,000원</td>
+        </tr>
+        <tr>
+          <td>소인/경로</td>
+          <td>38,000원</td>
+          <td>41,000원</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+
   </body>
 </html>
