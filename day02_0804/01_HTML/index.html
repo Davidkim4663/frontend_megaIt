@@ -6,21 +6,61 @@
     <title>01_html</title>
   </head>
   <body>
+    <div id="top"><h1 style="text-align: center">블록과 인라인 태그</h1></div>
+
+    <h3>요소성질</h3>
+    <h4>
+      블록성질 : h1 ~ h6(headLine tag 타이틀 파트), p(paragraph - 문단태그),
+      div(divide - 공간을 형성, 그룹핑 작업)
+    </h4>
+    <p>블록성질 => 레고블럭(세로방향 쌓임 => 세로 방향 정렬)</p>
+    <h4>
+      인라인 성질 : a(anchor - 링크를 걸어줄 때 사용 / href), img(image - 이미지
+      넣을 때 사용 / src(source), alt(alternative : 웹 접근성 - 몸이 불편하신
+      분들을 위한 텍스트 설명 (최대 150자까지),) span(인라인 성질을 갖고 있는
+      그룹핑))
+    </h4>
+    <p>인라인 성질 =></p>
+
     <div>
       <h3 style="background-color: yellow">타이틀(HeadLine) 태그(h1~h6)</h3>
-      <h1>타이틀 1</h1>
-      <h2>타이틀 2</h2>
-      <h3>타이틀 3</h3>
-      <h4>타이틀 4</h4>
-      <h5>타이틀 5</h5>
-      <h6>타이틀 6</h6>
-      <h7>타이틀 7(없음)</h7>
+      <h1>타이틀 1 - 폰트크기 2em(32px)</h1>
+      <h2>타이틀 2 - 폰트크기 1.5em(24px)</h2>
+      <h3>타이틀 3 - 폰트크기 1.17em(18.72px)</h3>
+      <h4>타이틀 4 - 폰트크기 1em(16px)</h4>
+      <!-- h5 ~ h6 잘 안씀 -->
+      <h5>타이틀 5 - 폰트크기 0.83em(13.28px)</h5>
+      <h6>타이틀 6 - 폰트크기 0.67em(10.72px)</h6>
+      <!-- <h7>타이틀 7(없음)</h7> -->
     </div>
     <hr />
     <div>
       <h3 style="background-color: yellowgreen">문단(paragraph)</h3>
-      <p>문단 내용</p>
+      <p>문단 내용 - 기본 16px(1em)</p>
       <p>문단<br />내리기</p>
+      <p style="margin-bottom: 0">손흥민</p>
+      <p style="margin-top: 10px">내리기</p>
+    </div>
+
+    <div>
+      <h3 style="background-color: yellowgreen">링크태그 : a(anchor)</h3>
+      <p>href 속성 : HyperText Referance 내부에 해당하는 문서를 참조한다.</p>
+
+      <!-- 절대경로 : http or https로 시작되는 주소를 참조한다. -->
+      <a href="https://www.naver.com/" target="_self">네이버 바로가기</a>
+
+      <!-- 상대경로 : 현재 파일 내부에서 이동  -->
+      <a href="./sub.html" target="_blank">서브페이지</a>
+
+      <p>a 태그 내부에 href에서 작성되는 대표적인 속성값들</p>
+      <a href="tel:01014568456">중국집으로 전화걸기</a>
+      <a href="mailto:custom@naver.ccm">고객센터 문의하기</a>
+      <a href="sms:01044657889">000에게 문자 발송하기</a>
+      <a href="#top">상단으로 이동</a>
+      <a href="javaScript:alert('경고창')">브라우저 경고창 띄우기</a>
+
+      <p>a 태그 내부에 선언 가능한 그 밖의 속성</p>
+      <a href="https://www.naver.com/" target="_blank">New Tab</a>
     </div>
   </body>
 </html>
