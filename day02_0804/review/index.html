@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0 auto; width: 1080px; height: 100vh">
+    <h3 id="top">요소성질</h3>
+    <p>
+      ● 블록성질<br />
+      h1 ~ h6(headingLine tag 타이틀 파트), p(paragraph - 문단태그) div(divide - 공간을 형성하며 그룹핑 작업에 사용한다.)
+    </p>
+    <p>
+      ● 인라인성질<br />
+      a(anchor- 링크를 걸어줄 때 사용 / href) img(image - 이미지 넣을 대 사용 / src(source), alt(alternative : 웹 접근성 - 몸이 불편하신 분들을 위한 텍스트 설명)) span(인라인 성질을 갖고 있는 그룹핑)
+    </p>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <h3 style="background-color: yellow">타이틀(Headline) 태그(h1 ~ h6)</h3>
+      <h1>타이틀1</h1>
+      <!-- 폰트크기 2em(32px) -->
+      <h2>타이틀2</h2>
+      <!-- 폰트크기 1.5em(24px) -->
+      <h3>타이틀3</h3>
+      <!-- 폰트크기 1.17em(18.72px) -->
+      <h4>타이틀4</h4>
+      <!-- 폰트크기 1em (16px) -->
+      <h5>타이틀5</h5>
+      <!-- 폰트크기 0.83em(13.28px) -->
+      <h6>타이틀6</h6>
+      <!-- 폰트크기 0.67em(10.72px) -->
+    </div>
+    <hr />
+    <div>
+      <h3 style="background-color: yellowgreen">문단(paragraph)</h3>
+      <p>문단 내용 - 기본 16px</p>
+      <p style="margin-bottom: 0">박진미</p>
+      <p style="margin-top: 10px">박진미</p>
+    </div>
+    <div>
+      <h3 style="background-color: rgb(205, 50, 159)">링크태그 : a(anchor)</h3>
+      <p>href 속성 : HyperText Referance 내부에 해당하는 문서를 참조한다.</p>
+
+      <!-- 절대경로 : http or https로 시작되는 주소를 참조한다. -->
+      <a href="https://www.naver.com/" target="_self">네이버 바로가기</a>
+
+      <!-- 상대경로 : 현재 파일 내부에서 이동 -->
+      <a href="./subpage.html" target="_blank">서브페이지</a>
+
+      <p>a 태그 내부에 href에서 작성되는 대표적인 속성값들</p>
+      <a href="tel:01045975546">치킨집으로 전화걸기</a>
+      <a href="mailto:custom@naver.com">고객센터 문의하기</a>
+      <a href="sms:01054559878">sms 전송하기</a>
+      <a href="#top">상단으로 이동</a>
+      <a href="javascript:alert('경고창')">브라우저 경고창 띄우기</a>
+
+      <p>a 태그에 내부에 선언 가능한 그 밖의 속성</p>
+      <a href="https://www.naver.com/" target="_blank">New Tab</a>
+    </div>
+
+    <div>
+      <h3>이미지 태그 : img 태그는 src, alt 속성은 필수</h3>
+      <a href="https://www.airbnb.co.kr/" target="_blank">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXAAAACJCAMAAAACLZNoAAAAilBMVEX/WmD/////WF7/Vlz/VFr/R07/TlX/S1L/W2H/+Pn/aW//foL/Rk3/PUX/Y2j/SVD/lpn/09T/QUn/cXX+y8z+s7X+29z/7e3+8/P+dnr+vsD+5uf+hor+jI/+ubv+gIT+mp3+o6X+xsf+3t/+qav+r7H+mJv+c3j+bHH/0NH/6er+pqj/KjT/ycpT2pvCAAAO70lEQVR4nO1da3urLLOOiJiDiak5n9okbVfb9On//3tbEwYGRCSp7r5puT+sazVRHG6HYZgZSKfj4eHh4eHh4eHh4eHh4eHh4eHh4eFxdyAhLRCSnxbkT4DQhL6ND5+H8RuLqOe8bTD2bx4A5mPGflqg3w0aPQYqZhn9aaF+MaJdL9DR26Y/LdavRaarNyj5Twv2S5E9GPkOgmny06L9SiTTCr6D4MvrePNIX6XZ/thvB9v9h2T8Jf5p8X4d6JNg95D732EY0ogexGer8KcF/G3IwD/ZEAarHcI6J/7p0huVZhGDg/Kc4cUlyZ7BVfEroCZBRpzXRaYu5km05N90/Cq/QUTgofR1Wx2+82+O0Y9I9jsRvnFWP8uGIwbv5d3Pm40hmVumxpRPpx9exZuCUPCdKVBFx6Di3oo3hGzDPUKz75edwIH5f5brtyKENc+T2UrTHf/+zVvxRjDc1GhwVndBkyCOhosINPv0NlpVUa/A4YBfsW07GUFYRGnCHHrL864Np17baVVDxE30vDoIm/D15qblOC2lj4sgOL3G9S+WBUHvjKDXnDaSvmi1vViGUPBJtYUOV3Yr3xBiECUY1DLOAoHmlLEgnKPXGuHJ4vKEB5v2ZtxRXwzbEiMH3UoSLW//grslXHjZfZvYdk+9GRAqOQyWdQH4uyV8yINTNevIiKffTu05Kij6XrzZGhW/V8KFgo/sUosYVnsqniop1WNNOPheCU94oORYVwuRcDqWbTkq3eECEz6vidzcKeF0z9u3WnBFlrZUvAvLK27iajTgTgmPFo4KLkPmi7ZUnK0x4a817/U+CRcK7pDOEcKMW1LxUKaxHYbcfRKeuVrwAlC3smzLF4/QrLmuk+guCaf/rhFZ5D3bUnESi2mzPkx2l4SDi7J2K/NJQcXbSv0QqB14rX/CPRIuLHiND14SpzVfnMSd/eNsTB1KMu6R8GR5lYLnRvZ4uaE1R6VY3zPmtO3iDgm/xkXh8oAV//fzRfp3SHjKFfzLveAefPHTz9cv3x/hIopiUPBz4sPQD9IFK35TXDxkcZKw/J+U8fu1hJae4FL/zM1NfmfRRKdEePFdErM0iYwWSW02zK9LWXEDVfuhE160GrHKVq9DVmXBaRqPBrvddjCKU910pF+Xm27wxQlLV6/TReEYLeezVUSLj7qAc3dIt+rvM8Vsdyz8xt5izXTCGRuvN+emN+vDKCpZPGin6CuNBrP5ufOL6etEuVYhvEtiuj+e02HL5/W/brnVqyB88K7y6kgcjz+gnHD5sUtj9etbHRUSh7NlgLDZZqQrPnkomBBTRN7dYTf/IBI7jp7jMDuIq4tJGxNOk1dlb9LzTt0JJvoaPEQkGytBss04k1quEE5jJdYQzLfD7+S7hsYoCqPqQ/IBoG4cBBW/Mi5OU73dvAPpWPy/jvCg30evSyM8XZW2gi3HuCiVygdFo4V+7WIixjgm/L+dfmGweEpuNixCBqzgJHkpPSQIDvgpgpSrVDzdlnfHFayI/9YSrvReJbw3DgyYd6WAiPCV6doX8AEQ4cuD6coPdquSgw+OFTykG9NDgmf8FAh4LK5Q8YrdcQi1hCvQNLwCAzE0qfGVIByzEuEV6PVvs+QiVY+CcuGoon/BcmQwc+4J/OSjol2JNggPdsB4LeHBY+RIeD5GbmI84bo8lUELElbxnfcfleYAfc41KsmxvhetEB48UVfCeYmTC+HB+w2Mh1CQgKIoCZpN5rP9eD+Te+7xSodAdtNRxeOZQyfaITzgI9OB8EtAzonw3g0uOdTDPkgFl27Ecs+yc7VXRvfCNZhJbx1qVNwqDUPjNKWjJcIXcRXhpZbP0Qonwm8osRQkSAsuO7uWZ3bkaxVhDqQ3Qyb8I6di2kzxvovBM95u90ftUyfCl4/bPgm7k/EjKxO+me2etof1Sf30hZkIn+5GlHYHylT+nJgIf34tWj1qruTV0VLYmoZqUSApH+xV05wcQEjpzsB+CUsxooBabLIcp/kiOQwpywaKR+RA+GKQsbBYnodUW9rnWHcT3m5X9YjOyqMSvk5Tem6H4RTTJUCgEj6jCb20OlLmod6V24RFMazc7Sr6OtNJTMDUyNCKuN9hS0SCOXtMpGqEGfb56wlfZ+p4woQvJ5Ecf+kIa/k5cKEQPkDX4sqMggyF8NNIrrJJMsFj0rAVykpCWUNBEQ2RbvDY95IsGCHWcsRLu7ir2uBJUSlhLeElRUCEL9TVCMnQbB9EqhSqHy1Uh/cPE/6cKK2GDA3J6xICok4Q2eCIy2iwTiDtg7QpIr9eu7EtQn1/0fNm8ac74aUkPiK8q0lBIqS4RY8Q4ZqOJFJvi52/mHBtw2q+LETj7aqd8FBShnf0MN6Y4c0R3jVcXgleTl0oHddnlqMv9Iql/cRCeMlNE3V5wWXuwQ9S33osbfNaJbwcD0enEVy1L1t0C/nR8JlxGoQRiqIuorC4JlmES00GJaVoivBy4D6SJ5H0IhvhVA6yaVyXgBhKo7K5Io8O8T6s4GDLjC+O8Xkfe4HmWGMJVB4JYoi9tEc4ts25MbIQvpff1BKOJyR3DRdJmy3iDzR2b3IwYUJVboBn27d7sC8hoSFT3R7hnUR+m4ttIfyf/KaWcBIqr9EREFVX9rBALMuYHAYtwISL2cZuzCI5CA3vskXCkaNyoDbCVRFqcpoo+uEcuhPTmFI+BRp+sGm48gwxFq2BBSThtixhi4TH0oi/NEj4s/jaebHJeChJrZ6Ctb6zDe+QmJPxalNxRLjBkWqRcCa9j1zApghP5bhxLRQRCq7qMnTVuJJJyl5K0SW+UOzZ5uv/CQ1vjvBIarhrfSWYBz0awP1wYzEGL7HtqapMYv5o40TLkUgbblCJNifNtm24QX+MgPN9XjRDANapW5Yd4t/PmioL42QJVsYyOrQum542J02UDW2McLyMczx2QEx1+uZqsNOGkQL36PZdPN5SFMRk6M5wUkWLfjgKwk+sbuE1hIcok+2YhIA9go+6ukFbD2WLDKOzNOuBg7mpLgqiSMRyaLE9wlMUTWXWleY1hCNf03FrmViRl94PBEzKNkWwUFq4iCVUtU8qLglMeZLWYin4sXP70v4KwnGEpm5TIwfMYcfyqg9i8aW9TGAVDLvKIAqmW3fcLIpN7/WnMnVd3ZyGI3/57I7dQnigj1sSo4i427EaMnFgcNH44C8VDUIGwfCIEHJt1YkIJoMpeRMq41Ty+z3C50O1HG+I0zNF7OEmwo8qE0qUveeo4Fwjjbu8YV7Xpk0INhgdRmuDFzHx/vnggMv4Irxp7VuEB5tYWhXCYpx/OK8sbiI8v1VSQVhYyiPVQtQ3GE9qEDEWdTrIbDETEX2t3rMSq5nabZF6LNKSkZol/B7hhbmKL+2m7FP5YqLlNK8gPOjtcmnPSdSI4JFq9J5NfTfEZSXMe9REDtgcFYREhMHJhmYVFc/f53q86vcHh7n68XcJz0XYTfrvTwftCPSvSKf1CsJzMR537/337Ysm7cxNwaHrFQYf4uQ9PDvCmYWGafYsL7h91WFxNDNa8H3Czbjoyc2Em9Fz8wlh/qo6Y0Y8DL0/YRCqxlBWsXLFl1Sdu4/REuE8ptcw4bWH5/CO88srwy4iLyXYDYGBytyliM1Uv3SSliqyy2iH8FlUpvX7hO/dXBRouhdXGXxCeItiiSL82cptSwSyz5ZgDqFLXeYSWiH8EbSgUcIPjulMWNlYUjQi8sEHgTC/FoMB90wtyc2QnXSpdbRBuCxlaZJwV76F+tr22IkyqfNcI26xxQMFSbZoDsnKG04KSF/rO4T3zI0/SWZuIXxh/AmS3sQ1eyzKeWwvSMRazpWNIiFZLnBAALNjzzlFT+XNFctJQ7GUTHWSz/iiSJ6bYin/Gd7jo8OBihxwMEENL+BRvMTyV0++rIMIRK5wHAFhstMoXzP6Jv6Ya4QHF8Ll32/VhJ9YPNHanr5H+HpUDKGd7IS/SdHasLgwHWiz/bF7RREnJCvscVy5TFkxWEXW1J/DLbWbk2nUfxFBpdMnySdv2n8aXHCJ/Xbhz8Fl70I4EH+X/NJQXJvLF6ZvRxgNvY9xmOr7XcXFWpCZjMQ355SClKCI6qaDKbS6/NrRSnfDREvncl/FgdWSFVjJ9IQGPdWMouzyKh1KeAlNstHTbrd9i7PLWyQh4HJFWPl3ua/qVyHLOkXTK5qlZQ0hle3o36gChPFF4BUbXrkVGYxTzcA3bMhZ183KYKzcjkjIO0jDayoh3XFpurF9999rFSpmP2uNfqQ6zfXHGIBj6F6L9BcAST5bip1fOVEIL/3qSQlQP+hPc8cAwo2lVSoYrqHf1budlGfvHSMMfwSgtzMHPzJCNdMOyyo4btDxHKc/Apg0XX4aJpQurstR9ZD28b8RjkH4fgmHc9/x1oqlA+M8N9faUW93CkjYl5bIOgjF66tTLeNgrCyp+z8JcN5KJUAa0GGNZyzSGsYhF2qtov2DADelZkEYlmLXC/sJISIY4J0UDRBMebUxTtGhSILxjs2zgaMLTt6iaBAlOSNL7aUM383+k/UNlhiwKP+qX1H9NYjqwerFeiZjlbOkk0jGx1W3yJ83dXEg/xignluvDAPQTOY41gXDKI51NJ9nJn/A10+ZBogE2jwt00cSVHn2cvHW0VFVvZXhPDMaA9+t/rzP3UJuXV5MNGePRH10LtUBLAg+5G06Kt2zEjOsNQn3d5HKw5DWnYSSIovV6ebWPevjjOlOJuBTfHrdsZ+Bpe4SmnSlxfm88vyQPwN8vNrDOB4Wx6pmw8krzgj2+tgcMyVYu3l5H2YxY9GQjVG53fTnj/79X8VQqUpczqfHBy39qtv3kGmFjJuH43SurI4e/A/JViP7CqzYl8gj2cF+y9HzbUNko+9hZNyJPJpb7jl4e2JH/F5VW7ncVhxlS5JdVXXgwviKPDDIcGyib2M7rJkO9TKeC9078xrKQwWNdlrN9nK9yuzBEJoN1vpZg7vEB1AcQSO6W198jd5pephEDqc0h3H09jk9nZery/njjn7zxPg/BkJZmjJa/Kv/EEI1QhrDTQ38JsJfxC2/l93qT757eHh4eHh4eHh4eHh4eHh4eHh4eNw5/g/5tduoQtDiBQAAAABJRU5ErkJggg=="
+          alt="airbnb"
+          style="width: 100px"
+        />
+      </a>
+      <img src="./img/kakao1.png" alt="카카오 이미지" style="width: 100px" />
+      <img src="./img/kakao2.jpg" alt="카카오 이미지" style="width: 100px" />
+      <img src="./img/kakao3.gif" alt="카카오 이미지" style="width: 100px" />
+      <img src="./img/facebook.svg" alt="fbIcon" width="100px" />
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <h3 style="background-color: rgb(113, 219, 226)">그룹핑이 가능한 태그</h3>
+      <div style="height: 100px; background-color: #eee">header영역</div>
+      <div style="height: 400px; background-color: #ffa">contents영역</div>
+      <div style="height: 80px; background-color: #faa">footer영역</div>
+      <br />
+      <header style="height: 100px; background-color: #30da2a">header영역</header>
+      <section style="height: 400px; background-color: rgb(118, 116, 226)">contents영역</section>
+      <footer style="height: 80px; background-color: rgb(170, 255, 215)">footer영역</footer>
+    </div>
+    <hr />
+    <br />
+    <span style="background-color: #ff0"> <span style="background-color: #30da2a">&copy;</span>samsung.co.kr </span>
+    <hr />
+    <br />
+    <div>
+      <h4><mark>구조 작성간 주의사항</mark></h4>
+      <i>블록 성질 내부에 블록성질 가능(단, 말단태그 내부에 말단태그를 넣지 말것</i>
+      <br />
+      <i>블럭성질 내부에 인라인 성질을 포함하는 것 가능</i>
+      <i>인라인 성질 내부에 인라인성질을 포함하는 것 가능</i>
+      <i>인라인 성질 내부에 블록성질을 포함 시키는 것을 피해야함</i>
+      <br />
+      <h5>
+        블록성질1
+        <p>블록성질2</p>
+      </h5>
+      <!-- <p>블록성질3 <h5>블록성질4</h5></p> -->
+      <p>블록성질5 <span style="color: #f00">블록성질</span></p>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <h3>텍스트 영역을 정의하는 태그</h3>
+      <p>강조태그 : 볼드, 이탤릭</p>
+      <strong>볼드처리</strong>
+      <b>볼드처리</b>
+      <em>이탤릭</em>
+      <i>이탤릭</i>
+      <del>취소선:del</del>
+      <span><del>12,000원</del>=>10,000원</span>
+      <p>상단표기, 하단표기</p>
+      <span>아이디 <sup style="color: red">*</sup></span>
+      <span
+        >CO<sub><small>2</small></sub></span
+      >
+      <p>글로벌화폐</p>
+      <span>$99. <small>99</small></span>
+    </div>
+
+    <div>
+      <table border="1" style="border-collapse: collapse; width: 100%; text-align: center">
+        <colgroup>
+          <col width="10%" />
+          <col width="15%" />
+          <col width="10%" />
+          <col width="10%" />
+          <col width="15%" />
+          <col width="10%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>종류</th>
+            <th>정상가</th>
+            <th>스마트예약우대가</th>
+            <th>동반인 우대가(3인까지)</th>
+            <th>할인율</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="6">우대기간 : 2022년 12월 1일 ~ 2022년 12월 31일 (방문일 기준)</td>
+            <!-- <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> -->
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td rowspan="3">대인 종일권</td>
+            <td>58,000원</td>
+            <td>26,000원</td>
+            <td>39,000원</td>
+            <td>55%</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>50,000원</td>
+            <td>24,000원</td>
+            <td>39,000원</td>
+            <td>52%</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>46,000원</td>
+            <td>22,000원</td>
+            <td>34,000원</td>
+            <td>52%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>리스트 항목 :<br />ol(order List : 순차적 목록)<br />ul(unorderList : 비순차적 목록)<br />dl(definition List : 정의된 목록)</h2>
+      <ol type="I" start="1">
+        <li>서류면접</li>
+        <li>1차면접</li>
+        <li>2차면접</li>
+        <li>컬쳐핏면접</li>
+        <li>
+          합격여부
+          <ol type="1" start="1">
+            <li>합격통보</li>
+            <li>OT진행 및 인수인계</li>
+            <li>입사기념 회식</li>
+          </ol>
+        </li>
+      </ol>
+
+      <ul style="list-style: none; width: 300px; display: flex; align-items: center; justify-content: center">
+        <li style="margin: 0px 15px; background-color: #30da2a"><a href="#" style="text-decoration: none; color: #333">메일</a></li>
+        <li style="margin: 0px 15px; background-color: #ff0"><a href="#" style="text-decoration: none; color: #333">뉴스</a></li>
+        <li style="margin: 0px 15px; background-color: #eee"><a href="#" style="text-decoration: none; color: #333">카페</a></li>
+        <li style="margin: 0px 15px; background-color: #f00"><a href="#" style="text-decoration: none; color: #333">블로그</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

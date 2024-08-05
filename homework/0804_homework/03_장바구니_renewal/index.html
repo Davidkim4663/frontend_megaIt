@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장바구니</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- 
+      Q. table안에 이미지를 넣으면 스타일을 적용 할 때
+         각 행의 높이 값이 안 맞아서 img태그에 스타일을 적용 하면
+         결과값이 많이 깨집니다.
+
+         table 대신 Ul태그를 사용하여 각 항목은 li로 관리하는게
+         더 편한데요...
+    
+    -->
+    <div id="myCart_container-box">
+      <div class="myCart_section">
+        <div class="myCart_title-box">
+          <h3>my Cart</h3>
+        </div>
+        <div class="myCart_item-box">
+          <ul class="item_list-box">
+            <li class="item_text_list">
+              <div class="item_text-box">
+                <ul class="item_text-box_firstLine">
+                  <li class="item_text-box_firstLine_list"><span>품목</span></li>
+                  <li class="item_text-box_firstLine_list"><span>내용</span></li>
+                  <li class="item_text-box_firstLine_list"><span>수량(개)</span></li>
+                  <li class="item_text-box_firstLine_list"><span>가격(원)</span></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item_product_list item_product_list1">
+              <div class="item_product_list_box">
+                <ul class="item_product_box">
+                  <li class="item_product_firstLine">
+                    <a href="#"><img src="./img/my_item_01.jpg" alt="" /></a>
+                  </li>
+                  <li class="item_product_firstLine"><span>듀얼 유선 가습기_라이언 </span></li>
+                  <li class="item_product_firstLine"><span>1</span></li>
+                  <li class="item_product_firstLine"><span>29,000원</span></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item_product_list item_product_list2">s</li>
+            <li class="item_product_list item_product_list3">s</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
